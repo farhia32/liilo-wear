@@ -1,7 +1,3 @@
-/* =========================
-   GENERAL STYLES
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,11 +20,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
-
-/* =========================
-   HEADER & NAVIGATION
-========================= */
 
 header {
     background-color: rgb(255, 255, 255);
@@ -74,10 +65,6 @@ nav ul a:hover {
 }
 
 
-/* =========================
-   HERO SECTION
-========================= */
-
 .hero {
     min-height: 75vh;
 
@@ -116,8 +103,6 @@ nav ul a:hover {
 }
 
 
-/* SHOP NOW BUTTON */
-
 .shop-button {
     display: inline-block;
 
@@ -138,10 +123,6 @@ nav ul a:hover {
 }
 
 
-/* =========================
-   SECTION HEADINGS
-========================= */
-
 .section-heading {
     text-align: center;
     margin-bottom: 45px;
@@ -155,11 +136,6 @@ nav ul a:hover {
 .section-heading p {
     color: rgb(119, 119, 119);
 }
-
-
-/* =========================
-   FEATURED COLLECTION
-========================= */
 
 .featured-section {
     max-width: 1200px;
@@ -177,8 +153,6 @@ nav ul a:hover {
 }
 
 
-/* PRODUCT CARD */
-
 .product-card {
     background-color: rgb(255, 255, 255);
 
@@ -195,9 +169,6 @@ nav ul a:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-
-/* PRODUCT IMAGE */
-
 .product-card img {
     width: 100%;
     height: 350px;
@@ -208,15 +179,11 @@ nav ul a:hover {
 }
 
 
-/* PRODUCT NAME */
-
 .product-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-
-/* PRODUCT PRICE */
 
 .price {
     font-size: 16px;
@@ -225,8 +192,6 @@ nav ul a:hover {
     margin-bottom: 15px;
 }
 
-
-/* VIEW PRODUCT BUTTON */
 
 .product-card > a {
     display: inline-block;
@@ -244,11 +209,6 @@ nav ul a:hover {
     background-color: rgb(34, 34, 34);
     color: rgb(255, 255, 255);
 }
-
-
-/* =========================
-   WHY CHOOSE LIILO
-========================= */
 
 .why-liilo {
     background-color: rgb(238, 232, 224);
@@ -286,10 +246,6 @@ nav ul a:hover {
     font-size: 14px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     background-color: rgb(34, 34, 34);
@@ -333,10 +289,6 @@ footer p {
     color: rgb(200, 169, 139);
 }
 
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 768px) {
 
