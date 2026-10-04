@@ -1,4 +1,6 @@
-* {
+/* =========================
+   HOME PAGE
+========================= */* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -327,4 +329,417 @@ footer p {
     .product-card img {
         height: 300px;
     }
+}
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+main > .section-heading {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 70px 30px 30px;
+}
+
+main > .section-heading h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+.product-controls {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 20px 30px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 12px;
+}
+
+.product-controls label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-controls select {
+    padding: 10px 14px;
+
+    border: 1px solid rgb(221, 214, 207);
+
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(45, 45, 45);
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.product-controls select:focus {
+    outline: 2px solid rgb(139, 111, 90);
+}
+
+
+.category-section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 40px 30px 80px;
+}
+
+.category-section h2 {
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid rgb(221, 214, 207);
+}
+
+
+.category-section .product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.category-section .product-card {
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgb(226, 221, 215);
+
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+.category-section .product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.category-section .product-card img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    margin-bottom: 18px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+
+    margin-bottom: 8px;
+
+    min-height: 52px;
+}
+
+.product-info .price {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.rating {
+    color: rgb(139, 111, 90);
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.product-card button {
+    width: 100%;
+
+    padding: 11px 15px;
+
+    border: 1px solid rgb(34, 34, 34);
+
+    background-color: rgb(34, 34, 34);
+
+    color: rgb(255, 255, 255);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(34, 34, 34);
+}
+
+@media (max-width: 900px) {
+
+    .category-section .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-controls {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main > .section-heading {
+        padding: 50px 20px 20px;
+    }
+
+    main > .section-heading h1 {
+        font-size: 32px;
+    }
+
+    .product-controls {
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .product-controls select {
+        width: 100%;
+    }
+
+    .category-section {
+        padding: 30px 20px 60px;
+    }
+
+    .category-section h2 {
+        font-size: 24px;
+    }
+
+    .category-section .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-section .product-card img {
+        height: 350px;
+    }
+}
+/* =========================
+   ABOUT PAGE
+========================= */
+
+
+.about-hero {
+    min-height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    background-color: rgb(238, 232, 224);
+}
+
+.about-hero h1 {
+    font-size: 52px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 1px;
+}
+
+.about-hero p {
+    font-size: 18px;
+
+    color: rgb(102, 102, 102);
+
+    max-width: 650px;
+}
+
+
+.our-story {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 36px;
+
+    margin-bottom: 25px;
+}
+
+.our-story p {
+    color: rgb(85, 85, 85);
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+}
+
+.our-mission {
+    background-color: rgb(250, 248, 245);
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.our-mission h2 {
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.our-mission p {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: rgb(85, 85, 85);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+.our-values {
+    background-color: rgb(238, 232, 224);
+
+    padding: 80px 30px;
+}
+
+.our-values > h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 45px;
+}
+
+
+.values {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.values article {
+    background-color: rgb(255, 255, 255);
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid rgb(226, 221, 215);
+
+    transition: 0.3s;
+}
+
+.values article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.values h3 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.values p {
+    color: rgb(102, 102, 102);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+@media (max-width: 900px) {
+
+    .values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 40vh;
+
+        padding: 50px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+    .our-story {
+        padding: 60px 20px;
+    }
+
+    .our-story h2,
+    .our-mission h2,
+    .our-values > h2 {
+        font-size: 30px;
+    }
+
+    .our-mission {
+        padding: 60px 20px;
+    }
+
+    .our-values {
+        padding: 60px 20px;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+    }
+
 }
